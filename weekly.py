@@ -12,7 +12,7 @@ import json
 
 
 def weekly_model():
-    df = pd.read_csv('/Users/najat/Downloads/Amal_Daily_typs/V.csv')
+    '''df = pd.read_csv('/Users/najat/Downloads/Amal_Daily_typs/V.csv')
       
     
     y=df['ICD10countCurrent']
@@ -30,7 +30,7 @@ def weekly_model():
     lm.fit(X_train, y_train)
     predictions = lm.predict(X_test)
     scores = cross_val_score(lm, X_test, y_test, scoring='r2')
-        
+      '''  
        
      
      
@@ -43,8 +43,8 @@ def weekly_model():
     plt.show()
     '''
     
-    print (" model Score:"+ str(r2_score(y_test, predictions)*100))
-    print (" Model sqr err "+ str(mean_squared_error(y_test,predictions)))
+    #print (" model Score:"+ str(r2_score(y_test, predictions)*100))
+    #print (" Model sqr err "+ str(mean_squared_error(y_test,predictions)))
     '''data = {"model_score": r2_score(y_test, predictions)*100,
             "model_squarerror": mean_squared_error(y_test,predictions)
             }'''
@@ -55,7 +55,7 @@ def weekly_model():
     with open('result.json', 'w') as outfile:
             json.dump(data, outfile, indent=4)
        
-
+weekly_model()
 
 
 
