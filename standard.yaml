@@ -3,5 +3,7 @@ version: 2.7
 entrypoint: weekly.py 
 script:
   - pip install --no-cache-dir -r requirements.txt
+input:
+  - message:file
 output:
   - message:file
