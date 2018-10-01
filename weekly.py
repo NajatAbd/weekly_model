@@ -49,7 +49,7 @@ def weekly_model():
             "model_squarerror": mean_squared_error(y_test,predictions)
             }
     
-    with open('output_data/result.json', 'w') as outfile:
+    with open('/output_data/result.json', 'w') as outfile:
             json.dump(data, outfile, indent=4)
     return " model Score:"+ str(r2_score(y_test, predictions)*100)+"\n Model sqr err "+ str(mean_squared_error(y_test,predictions))
        
