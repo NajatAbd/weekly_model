@@ -4,4 +4,4 @@ entrypoint: weekly.py
 script:
   - pip install --no-cache-dir -r requirements.txt
 output:
-  - message:string
+  - message:file
