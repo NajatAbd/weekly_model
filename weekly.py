@@ -16,7 +16,7 @@ def weekly_model():
     '''
     data = {"model_score": 100,
             "model_squarerror": 10}        
-    with open('result.json', 'w') as outfile:
+    with open('models_folder/47/result.json', 'w') as outfile:
                 json.dump(data, outfile, indent=4)
     '''        
     print("WRONG!")
