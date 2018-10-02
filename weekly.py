@@ -48,13 +48,13 @@ def weekly_model():
     '''data = {"model_score": r2_score(y_test, predictions)*100,
             "model_squarerror": mean_squared_error(y_test,predictions)
             }'''
+    print("HEY!!")
     data = {"model_score": 100,
             "model_squarerror": 10
             }        
     
     with open('result.json', 'w') as outfile:
             json.dump(data, outfile, indent=4)
-    print("HEY!")
     return "YES!"
        
 weekly_model()
