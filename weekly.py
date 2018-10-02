@@ -54,7 +54,7 @@ def weekly_model():
     
     with open('result.json', 'w') as outfile:
             json.dump(data, outfile, indent=4)
-    
+    print("HEY!")
     return "YES!"
        
 weekly_model()
