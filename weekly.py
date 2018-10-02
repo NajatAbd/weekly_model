@@ -11,11 +11,11 @@ def weekly_model():
     
     data = {"model_score": 100,
             "model_squarerror": 10}        
-    try:
-        with open('result.json', 'w') as outfile:
+    
+    with open('result.json', 'w') as outfile:
                 json.dump(data, outfile, indent=4)
-    except:
-        print("WRONG!")
+            
+    print("WRONG!")
        
 weekly_model()
 
